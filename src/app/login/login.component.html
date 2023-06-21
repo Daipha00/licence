@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary"><a href="customer-list" style="color: white;text-decoration: none;">Login</a></button>
+
+      <p style="margin-top: 20px;">Are you a new user? <a href="registration">Register here</a> </p>
+    </form>
+  </div>
+  
